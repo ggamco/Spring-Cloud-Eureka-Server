@@ -3,5 +3,7 @@ server:
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-server-lab-dekra-lab-dekra.e4ff.pro-eu-west-1.openshiftapps.com/eureka/,http://eureka-replica-lab-dekra-lab-dekra.e4ff.pro-eu-west-1.openshiftapps.com/eureka/
